@@ -1,0 +1,55 @@
+﻿@model GuestBookMVC.Models.HomeViewModels.HomeViewModel 
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["MissionStatement"] = "Hello, I am Dom R. and this my website, entry please! Feel free to leave a comment and tell me your thoughts. :)";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Guestbook</h1>
+    @foreach(var comment in Model.Comments)
+    {
+        <div class = "row"> 
+            <div class="col">@comment.Title</div>
+        </div> 
+    }
+   
+</div>
+
+
+<div class="text-center" style="font-family:'Times New Roman'; font-size: 50px; font-style: normal">
+    <h2>@ViewData["MissionStatement"]</h2>
+</div>
+
+<div class="text-right">
+    <a href="https://youtu.be/i-3h9TQ312c">One of my favorite songs</a>
+</div>
+
+<div style="font-family:'Times New Roman'">
+    
+    <h4><b> Things I like: </b> </h4>
+    
+    <div> 
+        <ul>
+            <li>Kebabs</li>
+            <li>Going to the gym</li>
+            <li>Formula 1</li>
+            <li>Poland</li>
+            <li>Driving (Not always following road laws >:D)</li>
+            <li>Counter Strike: Global Offensive</li>
+            <li>Committing Tax Evasion</li>
+            <li>Going to Church</li>
+            <li>Time New Roman Font</li>
+            <li>Clash Royale</li>
+        </ul>
+    </div>
+</div>
+<div class="text-center">
+    <img src = "http://c02.common.smcloud.net/s/qk2203890rX01.jpg" alt="Super Cool Pic of Extazy" class="center-block">
+</div>
+
+<div class="text-center">
+    <em> 
+        <p>Note: Hate against Poland is not tolerated, I have all of your ip addresses and the Winged Hussars will be arriving shortly</p> 
+    </em>
+</div>
